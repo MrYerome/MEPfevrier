@@ -1,0 +1,17 @@
+<div class="main container">
+    <div class="col-xs-8">
+        {message}
+
+        <div class="col-xs-4 login">
+
+            <h1>Espace de connexion Administatreur</h1><br>
+            <form action="index.php?Controller=Admin&action=controleAdmin" method="post">
+                <input type="text" id="loginAdmin" name="loginAdmin" placeholder="Login Administrateur" required="required" /><br><br>
+                <input type="password" id="passwordAdmin" name="passwordAdmin" placeholder="Password Admin" required="required" /><br><br>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Se connecter</button>
+            </form>
+            <br>
+            <a href="index.php?Controller=Home&action=home"><button type="button" class="btn btn-primary btn-block btn-large">Accueil du site</button></a>
+        </div>
+    </div>
+</div>

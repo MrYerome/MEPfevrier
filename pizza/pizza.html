@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+     <script src="script.js"></script>
+     
+</head>
+<body>
+   <header>
+           <nav id="nav">
+           <div id="logo"><img src="image/logopizza.jpg" alt="" width="10%"></div>
+           <ul>
+               <li><a href="#pizzas">Pizzas</a></li>
+               <li><a href="#boissons">Boissons</a></li>
+               <li><a href="#desserts">Desserts</a></li>
+           </ul>
+       </nav>
+      
+   </header>
+
+    <main>
+      <div id="panier">
+        <section class="row">
+           <div class="col-md-8">
+           <b>Nos pizzas</b>
+        <div id="pizzas">
+           <img src="image/Margarita.jpg" width="10%" alt="">
+          <label class="col-lg-3">Margarita</label>  <input type = "hidden" id = "id" style="width:120px" class="input-sm form-control" value="pizza Margarita"></input><br><br>
+                <label class="col-lg-3" >Quantité</label><input type = "number" id = "qte" style="width:120px" class="input-sm form-control"></input><br><br> 
+                <label class="col-lg-3">Prix</label><input readonly value="8" type = "number" id = "prix" style="width:120px" class="input-sm form-control"></input><br><br>
+                <button class="btn btn-primary" type="submit" onclick="ajouter()"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button><br></div>
+                <div id="pizzas">
+         <img src="image/4-fromages.jpg" width="10%" alt="">
+          <label class="col-lg-3">4 fromages</label>  <input type = "hidden" id = "id" style="width:120px" class="input-sm form-control" value="pizza 4 fromages"></input><br><br>
+                <label class="col-lg-3" >Quantité</label><input type = "number" id = "qte" style="width:120px" class="input-sm form-control"></input><br><br> 
+                <label class="col-lg-3">Prix</label><input readonly value="9" type = "number" id = "prix" style="width:120px" class="input-sm form-control"></input><br><br>
+    <button class="btn btn-primary" type="submit" onclick="ajouter()"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button><br></div>
+                  <div id="pizzas">
+                   <img src="image/napolitaine.jpg" width="10%" alt="">
+          <label class="col-lg-3">Napolitaine</label>  <input type = "hidden" id = "id" style="width:120px" class="input-sm form-control" value="pizza Napolitaine"></input><br><br>
+                <label class="col-lg-3" >Quantité</label><input type = "number" id = "qte" style="width:120px" class="input-sm form-control"></input><br><br> 
+                <label class="col-lg-3">Prix</label><input readonly value="10" type = "number" id = "prix" style="width:120px" class="input-sm form-control"></input><br><br>
+                <button class="btn btn-primary" type="submit" onclick="ajouter()"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button><br></div>         
+             
+       <div id="boissons"><b>Nos boissons</b></div>
+       <div id="desserts"><b>Nos dessert</b></div>
+           </div>
+        
+            <article class="well form-inline pull-left col-md-4">
+                <legend>Contenu du panier</legend>
+                <table id="tableau" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Qte</th>
+                            <th>Prix unitaire</th>
+                            <th>Prix de la ligne</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                </table>
+                <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
+                <label id = "nbreLignes" hidden>0</label>
+            </article>
+        </section>
+      </div>
+
+        
+    </main>
+    <footer><a href="#">Mentions légales</a></footer>
+</body>
+</html>

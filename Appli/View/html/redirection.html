@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var compteur;
+        var i = 0;
+
+        function decompte() {
+            i++;
+            console.log(i);
+            document.getElementById("temps").innerHTML = 4 - i;
+            if (i == 3) {
+                window.location = "index.php?Controller=Home&action=home";
+                clearTimeout(compteur);
+            }
+            compteur = setTimeout(decompte, 1000);
+        }
+
+        window.addEventListener("load", function () {
+            decompte();
+            document.addEventListener("click", stop);
+        });
+
+    </script>
+    <title>Redirection</title>
+</head>
+
+<body>
+Connexion à votre espace client dans <span disabled id="temps"></span> secondes. <br>
+
+
+</body>
+
+</html>

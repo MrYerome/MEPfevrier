@@ -1,0 +1,69 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    background-color: #1C1B1B;
+    width: 100%;
+    margin-left: -4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+   
+      
+}
+#logo{
+float: left;
+    width: 100%;
+}
+main{
+    background-color: white;
+    width: 100%;
+    height: 850px;
+}
+footer{
+    background-color: #1C1B1B;
+    width: 100%;
+    margin-left: -4px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background-color: #1C1B1B;
+    
+    margin-top: auto;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    
+}
+ul{
+    text-align: right;
+    
+}
+li{
+    display: inline;
+    padding: 2%;
+    
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+   
+article{
+    font-family: 'Oswald', sans-serif;
+    position: static
+}
+b{
+    font-size: 25px;
+}
+#pizzas{
+    border: 1px solid black;
+    margin: 3px;
+    width: 50%;
+}
+    

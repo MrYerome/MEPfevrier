@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a372cbc-f700-4282-8b66-efaa92ebaa18" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appli/Controller/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3848">
+              <caret line="148" column="26" lean-forward="false" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminView.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Appli/View/AdminView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="220" column="85" lean-forward="false" selection-start-line="220" selection-start-column="85" selection-end-line="220" selection-end-column="85" />
+              <folding>
+                <marker date="1519920779072" expanded="true" signature="1438:1643" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="4169:4374" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="6250:6268" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="7581:7754" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="9421:9438" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="10573:10717" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="12260:12391" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="13471:13619" ph="..." />
+                <marker date="1519920779072" expanded="true" signature="15200:15335" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appli/Model/AdminModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5408">
+              <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="14" />
+              <folding>
+                <element signature="n#getStockConsommable#0;n#AdminModel#0;n#!!top" expanded="false" />
+                <marker date="1519919892140" expanded="true" signature="1032:1099" ph="SELECT id_ad... mepadmin" />
+                <marker date="1519919892140" expanded="true" signature="1881:1998" ph="SELECT `id_c... mepclient" />
+                <marker date="1519919892140" expanded="true" signature="2441:2767" ph="SELECT mepcl... mepclient" />
+                <marker date="1519919892140" expanded="true" signature="3075:3608" ph="SELECT mepco... mepcommande" />
+                <marker date="1519919892140" expanded="true" signature="4003:4064" ph="UPDATE mepcommande... " />
+                <marker date="1519919892140" expanded="true" signature="4363:4965" ph="SELECT mepco... mepcommande" />
+                <marker date="1519919892140" expanded="true" signature="5295:5828" ph="SELECT mepco... mepcommande" />
+                <marker date="1519919892140" expanded="true" signature="6267:6869" ph="SELECT mepco... mepcommande" />
+                <marker date="1519919892140" expanded="true" signature="7187:7216" ph="SELECT * FRO... mepstockaliment" />
+                <marker date="1519919892140" expanded="true" signature="7597:7699" ph="SELECT id_al... mepstockaliment" />
+                <marker date="1519919892140" expanded="true" signature="8740:8851" ph="UPDATE `mepstockaliment`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appli/View/script/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2470">
+              <caret line="252" column="11" lean-forward="false" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!block;n#ajouter#0" expanded="false" />
+                <element signature="e#508#3154#0" expanded="false" />
+                <element signature="e#612#3146#0" expanded="false" />
+                <element signature="e#829#3136#0" expanded="false" />
+                <element signature="e#1532#1837#0" expanded="false" />
+                <element signature="e#1592#1819#0" expanded="false" />
+                <element signature="e#1944#3121#0" expanded="false" />
+                <element signature="n#!!block;n#supprimer#0" expanded="false" />
+                <element signature="e#3517#3762#0" expanded="false" />
+                <element signature="e#3565#3756#0" expanded="false" />
+                <element signature="e#3883#4676#0" expanded="false" />
+                <element signature="e#4833#5101#0" expanded="false" />
+                <element signature="e#5020#5095#0" expanded="false" />
+                <element signature="n#!!block;n#LignePanier#0" expanded="false" />
+                <element signature="e#5270#5309#0" expanded="false" />
+                <element signature="e#5346#5437#0" expanded="false" />
+                <element signature="e#5469#5509#0" expanded="false" />
+                <element signature="n#!!block;n#Panier#0" expanded="false" />
+                <element signature="e#5607#5781#0" expanded="false" />
+                <element signature="e#5819#5974#0" expanded="false" />
+                <element signature="e#6013#6150#0" expanded="false" />
+                <element signature="e#6195#6298#0" expanded="false" />
+                <element signature="n#!!block;n#Commande#0" expanded="false" />
+                <element signature="e#6399#6573#0" expanded="false" />
+                <element signature="e#6611#6766#0" expanded="false" />
+                <element signature="e#6805#6942#0" expanded="false" />
+                <element signature="e#6987#7090#0" expanded="false" />
+                <element signature="e#9880#9991#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajoutStockAliment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appli/View/html/ajoutStockAliment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appli/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getPrixPanier</find>
+      <find>ligneTableau</find>
+      <find>getCode</find>
+      <find>insertRow</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Appli/View/html/head.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/identification.html" />
+        <option value="$PROJECT_DIR$/Appli/View/css/style.css" />
+        <option value="$PROJECT_DIR$/Appli/View/html/headeradmin.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/footeradmin.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/headadmin.html" />
+        <option value="$PROJECT_DIR$/Appli/View/css/styleadmin.css" />
+        <option value="$PROJECT_DIR$/Appli/View/html/footer.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/header.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/home.html" />
+        <option value="$PROJECT_DIR$/Appli/View/html/fincommande.html" />
+        <option value="$PROJECT_DIR$/Appli/View/HomeView.php" />
+        <option value="$PROJECT_DIR$/Appli/index.php" />
+        <option value="$PROJECT_DIR$/Appli/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/html/json.html" />
+        <option value="$PROJECT_DIR$/Appli/View/script/scriptclient.js" />
+        <option value="$PROJECT_DIR$/Appli/View/html/ajoutStockAliment.html" />
+        <option value="$PROJECT_DIR$/Appli/Model/HomeModel.php" />
+        <option value="$PROJECT_DIR$/Appli/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/Appli/Model/AdminModel.php" />
+        <option value="$PROJECT_DIR$/Appli/View/script/script.js" />
+        <option value="$PROJECT_DIR$/Appli/View/AdminView.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MEP_fevrier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEP_fevrier" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Appli" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="script" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Library/PROJETS/MEPfinal" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a372cbc-f700-4282-8b66-efaa92ebaa18" name="Default" comment="" />
+      <created>1519718321774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519718321774</updated>
+      <workItem from="1519718323430" duration="27364000" />
+      <workItem from="1519805112781" duration="22817000" />
+      <workItem from="1519891695372" duration="21656000" />
+      <workItem from="1519978707064" duration="11000" />
+      <workItem from="1520262851125" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="71863000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>tableau2.innerHTML+= &quot;Numéro de la commande : &quot;+commande;
+                tableau2.innerHTML+= &quot;Reférence de la commande : &quot;+ref;</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Appli/Model/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5642">
+          <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="14" />
+          <folding>
+            <element signature="n#getStockConsommable#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <marker date="1519919892140" expanded="true" signature="1032:1099" ph="SELECT id_ad... mepadmin" />
+            <marker date="1519919892140" expanded="true" signature="1881:1998" ph="SELECT `id_c... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="2441:2767" ph="SELECT mepcl... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="3075:3608" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="4003:4064" ph="UPDATE mepcommande... " />
+            <marker date="1519919892140" expanded="true" signature="4363:4965" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="5295:5828" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="6267:6869" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="7187:7216" ph="SELECT * FRO... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="7597:7699" ph="SELECT id_al... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="8740:8851" ph="UPDATE `mepstockaliment`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6552">
+          <caret line="252" column="11" lean-forward="false" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#ajouter#0" expanded="false" />
+            <element signature="e#508#3154#0" expanded="false" />
+            <element signature="e#612#3146#0" expanded="false" />
+            <element signature="e#829#3136#0" expanded="false" />
+            <element signature="e#1532#1837#0" expanded="false" />
+            <element signature="e#1592#1819#0" expanded="false" />
+            <element signature="e#1944#3121#0" expanded="false" />
+            <element signature="n#!!block;n#supprimer#0" expanded="false" />
+            <element signature="e#3517#3762#0" expanded="false" />
+            <element signature="e#3565#3756#0" expanded="false" />
+            <element signature="e#3883#4676#0" expanded="false" />
+            <element signature="e#4833#5101#0" expanded="false" />
+            <element signature="e#5020#5095#0" expanded="false" />
+            <element signature="n#!!block;n#LignePanier#0" expanded="false" />
+            <element signature="e#5270#5309#0" expanded="false" />
+            <element signature="e#5346#5437#0" expanded="false" />
+            <element signature="e#5469#5509#0" expanded="false" />
+            <element signature="n#!!block;n#Panier#0" expanded="false" />
+            <element signature="e#5607#5781#0" expanded="false" />
+            <element signature="e#5819#5974#0" expanded="false" />
+            <element signature="e#6013#6150#0" expanded="false" />
+            <element signature="e#6195#6298#0" expanded="false" />
+            <element signature="n#!!block;n#Commande#0" expanded="false" />
+            <element signature="e#6399#6573#0" expanded="false" />
+            <element signature="e#6611#6766#0" expanded="false" />
+            <element signature="e#6805#6942#0" expanded="false" />
+            <element signature="e#6987#7090#0" expanded="false" />
+            <element signature="e#9880#9991#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/ajoutStockAliment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3848">
+          <caret line="148" column="26" lean-forward="false" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5642">
+          <caret line="217" column="8" lean-forward="true" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="14" />
+          <folding>
+            <element signature="n#getStockConsommable#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <marker date="1519919892140" expanded="true" signature="1032:1099" ph="SELECT id_ad... mepadmin" />
+            <marker date="1519919892140" expanded="true" signature="1881:1998" ph="SELECT `id_c... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="2441:2767" ph="SELECT mepcl... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="3075:3608" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="4003:4064" ph="UPDATE mepcommande... " />
+            <marker date="1519919892140" expanded="true" signature="4363:4965" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="5295:5828" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="6267:6869" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="7187:7216" ph="SELECT * FRO... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="7597:7699" ph="SELECT id_al... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="8740:8851" ph="UPDATE `mepstockaliment`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6552">
+          <caret line="252" column="11" lean-forward="true" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#ajouter#0" expanded="false" />
+            <element signature="e#508#3154#0" expanded="false" />
+            <element signature="e#612#3146#0" expanded="false" />
+            <element signature="e#829#3136#0" expanded="false" />
+            <element signature="e#1532#1837#0" expanded="false" />
+            <element signature="e#1592#1819#0" expanded="false" />
+            <element signature="e#1944#3121#0" expanded="false" />
+            <element signature="n#!!block;n#supprimer#0" expanded="false" />
+            <element signature="e#3517#3762#0" expanded="false" />
+            <element signature="e#3565#3756#0" expanded="false" />
+            <element signature="e#3883#4676#0" expanded="false" />
+            <element signature="e#4833#5101#0" expanded="false" />
+            <element signature="e#5020#5095#0" expanded="false" />
+            <element signature="n#!!block;n#LignePanier#0" expanded="false" />
+            <element signature="e#5270#5309#0" expanded="false" />
+            <element signature="e#5346#5437#0" expanded="false" />
+            <element signature="e#5469#5509#0" expanded="false" />
+            <element signature="n#!!block;n#Panier#0" expanded="false" />
+            <element signature="e#5607#5781#0" expanded="false" />
+            <element signature="e#5819#5974#0" expanded="false" />
+            <element signature="e#6013#6150#0" expanded="false" />
+            <element signature="e#6195#6298#0" expanded="false" />
+            <element signature="n#!!block;n#Commande#0" expanded="false" />
+            <element signature="e#6399#6573#0" expanded="false" />
+            <element signature="e#6611#6766#0" expanded="false" />
+            <element signature="e#6805#6942#0" expanded="false" />
+            <element signature="e#6987#7090#0" expanded="false" />
+            <element signature="e#9880#9991#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/ajoutStockAliment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/AdminView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5720">
+          <caret line="220" column="85" lean-forward="false" selection-start-line="220" selection-start-column="85" selection-end-line="220" selection-end-column="85" />
+          <folding>
+            <marker date="1519920779072" expanded="true" signature="1438:1643" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="4169:4374" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="6250:6268" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="7581:7754" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="9421:9438" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="10573:10717" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="12260:12391" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="13471:13619" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="15200:15335" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6578">
+          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="n#getStockConsommable#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <marker date="1519919892140" expanded="true" signature="1032:1099" ph="SELECT id_ad... mepadmin" />
+            <marker date="1519919892140" expanded="true" signature="1881:1998" ph="SELECT `id_c... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="2441:2767" ph="SELECT mepcl... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="3075:3608" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="4003:4064" ph="UPDATE mepcommande... " />
+            <marker date="1519919892140" expanded="true" signature="4363:4965" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="5295:5828" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="6267:6869" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="7187:7216" ph="SELECT * FRO... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="7597:7699" ph="SELECT id_al... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="8740:8851" ph="UPDATE `mepstockaliment`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/HomeView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="103" column="25" lean-forward="true" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/fincommande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4238">
+          <caret line="163" column="24" lean-forward="true" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#ajouter#0" expanded="false" />
+            <element signature="e#508#3154#0" expanded="false" />
+            <element signature="e#612#3146#0" expanded="false" />
+            <element signature="e#829#3136#0" expanded="false" />
+            <element signature="e#1532#1837#0" expanded="false" />
+            <element signature="e#1592#1819#0" expanded="false" />
+            <element signature="e#1944#3121#0" expanded="false" />
+            <element signature="n#!!block;n#supprimer#0" expanded="false" />
+            <element signature="e#3517#3762#0" expanded="false" />
+            <element signature="e#3565#3756#0" expanded="false" />
+            <element signature="e#3883#4676#0" expanded="false" />
+            <element signature="e#4833#5101#0" expanded="false" />
+            <element signature="e#5020#5095#0" expanded="false" />
+            <element signature="n#!!block;n#LignePanier#0" expanded="false" />
+            <element signature="e#5270#5309#0" expanded="false" />
+            <element signature="e#5346#5437#0" expanded="false" />
+            <element signature="e#5469#5509#0" expanded="false" />
+            <element signature="n#!!block;n#Panier#0" expanded="false" />
+            <element signature="e#5607#5781#0" expanded="false" />
+            <element signature="e#5819#5974#0" expanded="false" />
+            <element signature="e#6013#6150#0" expanded="false" />
+            <element signature="e#6195#6298#0" expanded="false" />
+            <element signature="n#!!block;n#Commande#0" expanded="false" />
+            <element signature="e#6399#6573#0" expanded="false" />
+            <element signature="e#6611#6766#0" expanded="false" />
+            <element signature="e#6805#6942#0" expanded="false" />
+            <element signature="e#6987#7090#0" expanded="false" />
+            <element signature="e#9880#9991#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/css/styleadmin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2470">
+          <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2678">
+          <caret line="103" column="22" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/HomeView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/headeradmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/footeradmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/css/styleadmin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/identification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/headadmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/bootstrap-3.3.7-dist/css/datatables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/bootstrap-3.3.7-dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/HomeView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/identificationAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/accueilAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/script/scriptclient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/fincommande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/html/ajoutStockAliment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="295" column="4" lean-forward="false" selection-start-line="295" selection-start-column="4" selection-end-line="295" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Model/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5408">
+          <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="14" />
+          <folding>
+            <element signature="n#getStockConsommable#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <marker date="1519919892140" expanded="true" signature="1032:1099" ph="SELECT id_ad... mepadmin" />
+            <marker date="1519919892140" expanded="true" signature="1881:1998" ph="SELECT `id_c... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="2441:2767" ph="SELECT mepcl... mepclient" />
+            <marker date="1519919892140" expanded="true" signature="3075:3608" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="4003:4064" ph="UPDATE mepcommande... " />
+            <marker date="1519919892140" expanded="true" signature="4363:4965" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="5295:5828" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="6267:6869" ph="SELECT mepco... mepcommande" />
+            <marker date="1519919892140" expanded="true" signature="7187:7216" ph="SELECT * FRO... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="7597:7699" ph="SELECT id_al... mepstockaliment" />
+            <marker date="1519919892140" expanded="true" signature="8740:8851" ph="UPDATE `mepstockaliment`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2470">
+          <caret line="252" column="11" lean-forward="false" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#ajouter#0" expanded="false" />
+            <element signature="e#508#3154#0" expanded="false" />
+            <element signature="e#612#3146#0" expanded="false" />
+            <element signature="e#829#3136#0" expanded="false" />
+            <element signature="e#1532#1837#0" expanded="false" />
+            <element signature="e#1592#1819#0" expanded="false" />
+            <element signature="e#1944#3121#0" expanded="false" />
+            <element signature="n#!!block;n#supprimer#0" expanded="false" />
+            <element signature="e#3517#3762#0" expanded="false" />
+            <element signature="e#3565#3756#0" expanded="false" />
+            <element signature="e#3883#4676#0" expanded="false" />
+            <element signature="e#4833#5101#0" expanded="false" />
+            <element signature="e#5020#5095#0" expanded="false" />
+            <element signature="n#!!block;n#LignePanier#0" expanded="false" />
+            <element signature="e#5270#5309#0" expanded="false" />
+            <element signature="e#5346#5437#0" expanded="false" />
+            <element signature="e#5469#5509#0" expanded="false" />
+            <element signature="n#!!block;n#Panier#0" expanded="false" />
+            <element signature="e#5607#5781#0" expanded="false" />
+            <element signature="e#5819#5974#0" expanded="false" />
+            <element signature="e#6013#6150#0" expanded="false" />
+            <element signature="e#6195#6298#0" expanded="false" />
+            <element signature="n#!!block;n#Commande#0" expanded="false" />
+            <element signature="e#6399#6573#0" expanded="false" />
+            <element signature="e#6611#6766#0" expanded="false" />
+            <element signature="e#6805#6942#0" expanded="false" />
+            <element signature="e#6987#7090#0" expanded="false" />
+            <element signature="e#9880#9991#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3848">
+          <caret line="148" column="26" lean-forward="false" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appli/View/AdminView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="220" column="85" lean-forward="false" selection-start-line="220" selection-start-column="85" selection-end-line="220" selection-end-column="85" />
+          <folding>
+            <marker date="1519920779072" expanded="true" signature="1438:1643" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="4169:4374" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="6250:6268" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="7581:7754" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="9421:9438" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="10573:10717" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="12260:12391" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="13471:13619" ph="..." />
+            <marker date="1519920779072" expanded="true" signature="15200:15335" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.4875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

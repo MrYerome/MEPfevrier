@@ -1,0 +1,19 @@
+Liste des tâches :
+- faire un site front de vente en ligne
+	- page d'accueil  /  page identification
+	- page listant les produits
+	- page vente en ligne
+
+- faire une base de données, jmerise, à voir 5 tables ?
+	- client
+	- commande
+	- pizza/produits
+
+	- stocks alimentaires
+	- stocks emballage
+
+- acces administrateur
+	- liste les stocks
+	- commande des stocks (voir lien avec les 2 groupes)
+	- liste des commandes, y compris par client
+
