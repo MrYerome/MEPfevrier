@@ -1,5 +1,5 @@
 Liste des tâches :
-- faire un site front de vente en ligne
+- faire un site front de vente on line
 	- page d'accueil  /  page identification
 	- page listant les produits
 	- page vente en ligne
