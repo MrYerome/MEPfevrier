@@ -266,12 +266,46 @@ function ajouterstock() {
     });
 }
 
+function premconnex() {
+    $("#premconnex").click(function (e) {
+        e.preventDefault();
+        var form = $(this).closest("form");
+        form = form[0].getElementsByTagName("input");
+        console.log(form);
+        var mail = form[2];
+        var password = form[3];
+        var nom = form[4];
+        var prenom = form[5];
+        var adresse = form[6];
+        var codepostal = form[7];
+        var ville = form[8];
+        var tel = form[9];
+
+        //    Vérification du nom
+        if (nom.value == "") {
+            nom.style.borderColor = "red";
+            nom.parentNode.className = "invalid";
+            verification = false;
+            console.log(verification);
+        } else {
+            nom.style.borderColor = "#ccc";
+            nom.parentNode.className = "";
+            //passe le nom en majuscule
+            var minus = nom.value;
+            var maj = minus.toUpperCase();
+            nom.value = maj;
+        }
+
+    });
+}
+
 
 $(document).ready(function () {
     ajouter();
     validation();
     ajoutaliment();
     ajouterstock();
+    premconnex();
     // $('#myTable').DataTable();
 
 });

@@ -1,31 +1,33 @@
-
 <div class="main container">
     <div class="col-xs-1"></div>
-<div class="col-xs-4 login">
-    <h1>Vous êtes déjà membre ?</h1><br>
-    <form action="index.php?Controller=Home&action=connection" method="post">
-        <input type="text" id="lofginform" name="loginform" placeholder="Adresse mail" required="required" /><br><br>
-        <input type="password" id="passwordform" name="passwordform" placeholder="Password" required="required" /><br><br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Se connecter</button>
-    </form>
-</div>
+    <div class="col-xs-4 login">
+        <h1>Vous êtes déjà membre ?</h1><br>
+        <form action="index.php?Controller=Home&action=connection" method="post">
+            <input type="text" id="lofginform" name="loginform" placeholder="Adresse mail" required="required" /><br><br>
+            <input type="password" id="passwordform" name="passwordform" placeholder="Password" required="required" /><br><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Se connecter</button>
+        </form>
+    </div>
     <div class="col-xs-2"></div>
     <div class="col-xs-4 login">
         <h1>C'est votre première commande ?</h1><br>
         <form action="index.php?Controller=Home&action=premiereconnection" method="post">
-            <input type="text" id="lofginformpremiere" name="lofginformpremiere" placeholder="Adresse mail" required="required" /><br><br>
-            <input type="password" id="passwordformpremiere" name="passwordformpremiere" placeholder="Votre mot de passe" required="required" /><br><br>
-            <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom"/><br>
-            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom"/><br>
-            <input type="text" id="adresse1" name="adresse1" placeholder="Votre adresse"/><br>
-            <input type="text" id="codepostal" name="codepostal" placeholder="Votre codepostal"/><br>
-            <input type="text" id="ville" name="ville" placeholder="Votre ville"/><br>
-            <input type="text" id="tel" name="tel" placeholder="Votre téléphone"/><br>
+            <input type="text" id="lofginformpremiere" name="lofginformpremiere" placeholder="Adresse mail"><br><br>
+            <input type="password" id="passwordformpremiere" name="passwordformpremiere" placeholder="Votre mot de passe"><br><br>
+            <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom" /><br>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" /><br>
+            <input type="text" id="adresse1" name="adresse1" placeholder="Votre adresse" /><br>
+            <input type="text" id="codepostal" name="codepostal" placeholder="Votre codepostal" /><br>
+            <input type="text" id="ville" name="ville" placeholder="Votre ville" /><br>
+            <input type="text" id="tel" name="tel" placeholder="Votre téléphone" /><br>
 
-            <button type="submit" class="btn btn-primary btn-block btn-large">Se connecter</button>
+            <button type="submit" id="premconnex" class="btn btn-primary btn-block btn-large">Se connecter</button>
+
         </form>
     </div>
 
 
     <div class="col-xs-1"></div>
 </div>
+
+<!---->
