@@ -11,17 +11,17 @@
     <div class="col-xs-2"></div>
     <div class="col-xs-4 login">
         <h1>C'est votre première commande ?</h1><br>
-        <form action="index.php?Controller=Home&action=premiereconnection" method="post">
-            <input type="text" id="lofginformpremiere" name="lofginformpremiere" placeholder="Adresse mail"><br><br>
-            <input type="password" id="passwordformpremiere" name="passwordformpremiere" placeholder="Votre mot de passe"><br><br>
-            <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom" /><br>
+        <form id='premiereconnex' action="index.php?Controller=Home&action=premiereconnection" method="post">
+            <input type="text" id="lofginformpremiere" name="lofginformpremiere" placeholder="Adresse mail"><span id='missmail'></span><br><br>
+            <input type="password" id="passwordformpremiere" name="passwordformpremiere" placeholder="Votre mot de passe"><span id="misspass"></span><br><br>
+            <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom" /><span id="missnom"></span><br>
             <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" /><br>
             <input type="text" id="adresse1" name="adresse1" placeholder="Votre adresse" /><br>
             <input type="text" id="codepostal" name="codepostal" placeholder="Votre codepostal" /><br>
             <input type="text" id="ville" name="ville" placeholder="Votre ville" /><br>
             <input type="text" id="tel" name="tel" placeholder="Votre téléphone" /><br>
 
-            <button type="submit" id="premconnex" class="btn btn-primary btn-block btn-large">Se connecter</button>
+            <button type="button" id="premconnex" class="btn btn-primary btn-block btn-large">Se connecter</button>
 
         </form>
     </div>

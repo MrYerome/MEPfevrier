@@ -268,7 +268,7 @@ function ajouterstock() {
 
 function premconnex() {
     $("#premconnex").click(function (e) {
-        e.preventDefault();
+        //        e.preventDefault();
         var form = $(this).closest("form");
         form = form[0].getElementsByTagName("input");
         console.log(form);
@@ -281,8 +281,13 @@ function premconnex() {
         var ville = form[6];
         var tel = form[7];
 
-        // Vérification du mail
+        var verification = true;
 
+        //        var missnom = document.getElementById("missnom");
+        //        var missmail = document.getElementById("missmail");
+
+
+        // Vérification du mail
         if (mail.value !== "") {
             var mailValue = mail.value;
             var regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
@@ -295,14 +300,17 @@ function premconnex() {
                 mail.style.borderColor = "#ccc";
                 mail.parentNode.className = "";
             }
+        } else {
+            missmail.textContent = "  Veuillez renseigner votre mail";
+            missmail.style.color = "red";
+            verification = false;
         }
-
-
-
         //    Vérification du nom
         if (nom.value == "") {
             nom.style.borderColor = "red";
-            nom.parentNode.className = "invalid";
+            nom.setAttribute("placeholder", "VOTRE NOM !!!");
+            missnom.textContent = "  Veuillez renserigner votre nom";
+            missnom.style.color = "red";
             verification = false;
             console.log(verification);
         } else {
@@ -312,6 +320,25 @@ function premconnex() {
             var minus = nom.value;
             var maj = minus.toUpperCase();
             nom.value = maj;
+        }
+
+        //    Vérification du mot de passe
+        if (password.value == "") {
+            password.style.borderColor = "red";
+            password.setAttribute("placeholder", "Mot de passe please !");
+            misspass.textContent = "  Veuillez indiquer un mot de passe";
+            misspass.style.color = "red";
+            verification = false;
+            console.log(verification);
+        } else {
+            password.style.borderColor = "#ccc";
+            password.parentNode.className = "";
+
+        }
+        console.log(verification);
+        //Envoi de la requête 
+        if (verification == true) {
+            document.getElementById("premiereconnex").submit();
         }
 
     });
