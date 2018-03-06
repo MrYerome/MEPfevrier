@@ -84,8 +84,8 @@ class HomeView
             $this->page .= "<td>Le prix total de votre comande est de ".$total." Euros.";
             $this->page .= "</tbody></table>";
             $this->page .= "<div class=\"main container\">";
-            $this->page .= "<button class='validation btn btn-primary'>Confirmer votre commande<button/>";
-            $this->page .= "<div/>";
+            $this->page .= "<button class='validation btn btn-primary'>Confirmer votre commande</button>";
+            $this->page .= "</div>";
             $this->Display();
         } else {
             $this->DisplayIdentification_erreur();

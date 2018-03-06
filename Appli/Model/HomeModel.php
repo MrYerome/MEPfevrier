@@ -86,16 +86,6 @@ class HomeModel
 
         $result = $requete->execute();
 
-//        var_dump($loginformpremiere);
-//        var_dump($passwordformpremiere);
-//        var_dump($nomfamille);
-//        var_dump($adresse1);
-//        var_dump($prenom);
-//        var_dump($codepostal);
-//        var_dump($ville);
-//        var_dump($tel);
-//        var_dump($requete);
-//        var_dump($result);
         if ($result) {
             $_SESSION['login'] = $loginformpremiere;
             $_SESSION['password'] = $passwordformpremiere;
