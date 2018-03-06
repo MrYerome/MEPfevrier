@@ -335,6 +335,23 @@ function premconnex() {
             password.parentNode.className = "";
 
         }
+
+        // Vérification du téléphone
+        if (tel.value !== "") {
+            var telValue = tel.value;
+            var regExp2 = /(\+\d+(\s|-))?0\d(\s|-)?(\d{2}(\s|-)?){4}/;
+
+            if (!regExp2.test(telValue)) {
+                tel.style.borderColor = "red";
+                tel.parentNode.className = "invalid";
+                alert('Tel non valide');
+                verification = false;
+            } else {
+                tel.style.borderColor = "#ccc";
+                tel.parentNode.className = "";
+            }
+        }
+
         console.log(verification);
         //Envoi de la requête 
         if (verification == true) {
