@@ -39,10 +39,10 @@ class AdminModel
         $resultat = $requete->fetch(PDO::FETCH_ASSOC);
                 
         if (($resultat['login'] == $loginAdmin) && ($resultat['mdp'] == $passwordAdmin)) {
-            $_SESSION['acces'] ="acces";
+            $_SESSION['acces'] ="admin";
             $_SESSION['message'] = "<div class=\"alert alert-success\"><strong>Bienvenue cher et tendre administrateur de ce superbe site... Du bon boulot!!!</strong></div>";
         } else {
-            $_SESSION['acces'] = 0;
+            //$_SESSION['acces'] != "admin";
             $_SESSION['message'] = "<div class=\"alert alert-danger\"><strong>Oups... Erreur d'authentification!!! Rooooo, le boulet</strong></div>";
         }
         

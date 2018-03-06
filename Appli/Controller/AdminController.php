@@ -11,7 +11,7 @@ class AdminController
     }
     
     public function identificationAdminAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $this->view->DisplayAccueil();
         } else {
             $this->view->displayIdentificationAdmin();
@@ -30,7 +30,7 @@ class AdminController
 
     public function accueilAction()
     {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $this->view->DisplayAccueil();
         }else{
             $this->identificationAdminAction();
@@ -40,7 +40,7 @@ class AdminController
 
     public function listeClientAction()
     {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
                 $liste = $this->model->getListeClient();
                 $this->view->DisplayListeClient($liste);        
         }else{
@@ -50,7 +50,7 @@ class AdminController
 
     public function voirClientAction()
     {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $list = $this->model->getDetail();
             $this->view->DisplayDetail($list);
         }else{
@@ -59,7 +59,7 @@ class AdminController
     }
 
     public function listeCommandeAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $listeCommande = $this->model->getListeCommande();
             $this->view->displayListeCommande($listeCommande);
         }else{
@@ -68,7 +68,7 @@ class AdminController
     }
     
     public function hideCommandeAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $this->model->hideCommande();
             header("location:index.php?Controller=Admin&action=listeCommande");
         }else{
@@ -78,7 +78,7 @@ class AdminController
 
     public function detailCommandeAction()
     {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $list = $this->model->getDetailCommande();
             $this->view->DisplayDetailCommande($list);
         }else{
@@ -87,7 +87,7 @@ class AdminController
     }
     
     public function historiqueCommandeAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $listeCommande = $this->model->getHistoriqueCommande();
             $this->view->displayHistoriqueCommande($listeCommande);  
         }else{
@@ -97,7 +97,7 @@ class AdminController
     
     public function detailHistoriqueCommandeAction()
     {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $list = $this->model->getDetailHistoriqueCommande();
             $this->view->DisplayDetailHistoriqueCommande($list); 
         }else{
@@ -106,7 +106,7 @@ class AdminController
     }
 
     public function listeStockAlimentAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $liste = $this->model->getStockAliment();
             $this->view->displayStockAliment($liste);
         }else{
@@ -115,7 +115,7 @@ class AdminController
     }
     
     public function detailAlimentAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $detailAliment = $this->model->getDetailAliment();
             $this->view->displayDetailAliment($detailAliment);
         }else{
@@ -124,7 +124,7 @@ class AdminController
     }
     
     public function listeStockConsommableAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $liste = $this->model->getStockConsommable();
             $this->view->displayStockConsommable($liste);
         }else{
@@ -133,7 +133,7 @@ class AdminController
     }
     
     public function detailConsommableAction() {
-        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "acces"){
+        if (isset($_SESSION['acces']) && $_SESSION['acces'] == "admin"){
             $detailAliment = $this->model->getDetailConsommable();
             $this->view->displayDetailConsommable($detailAliment);
         }else{
