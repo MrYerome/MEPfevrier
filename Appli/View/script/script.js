@@ -18,53 +18,60 @@ function ajouter() {
     $(".ajouter").click(function () {
         var id = $(this).attr('id');
         var qte = $(this).siblings(".qte").val();
-        $.ajax({
-            type: "POST",
-            data: "&id=" + id + "&qte=" + qte,
-            dataType: "text",
-            url: "index.php?Controller=Home&action=ajoutLigneCommande",
-            success: function (message) {
-                console.log(message);
-                var messagedecode = jQuery.parseJSON(message);
-                var id_produit = messagedecode['id_produit'];
-                var type_produit = messagedecode['typeproduit'];
-                var code = messagedecode['nom'];
-                var prix = messagedecode['prix'];
-                console.log(id_produit, type_produit, code, prix, qte);
 
-                var monPanier = new Panier();
-                monPanier.ajouterArticle(code, qte, prix);
-                var tableau = document.getElementById("tableau");
-                var longueurTab = parseInt(document.getElementById("nbreLignes").innerHTML);
-                if (longueurTab > 0) {
-                    for (var i = longueurTab; i > 0; i--) {
-                        monPanier.ajouterArticle(tableau.rows[i].cells[0].innerHTML, tableau.rows[i].cells[1].innerHTML, tableau.rows[i].cells[2].innerHTML);
-                        tableau.deleteRow(i);
+        if (qte > 9) {
+            alert("Vous ne pouvez commander que 9 pizzas maximum");
+        } else if (qte < 1) {
+            alert("Veuillez commander au moins une pizza");
+        } else {
+            $.ajax({
+                type: "POST",
+                data: "&id=" + id + "&qte=" + qte,
+                dataType: "text",
+                url: "index.php?Controller=Home&action=ajoutLigneCommande",
+                success: function (message) {
+                    console.log(message);
+                    var messagedecode = jQuery.parseJSON(message);
+                    var id_produit = messagedecode['id_produit'];
+                    var type_produit = messagedecode['typeproduit'];
+                    var code = messagedecode['nom'];
+                    var prix = messagedecode['prix'];
+                    console.log(id_produit, type_produit, code, prix, qte);
+
+                    var monPanier = new Panier();
+                    monPanier.ajouterArticle(code, qte, prix);
+                    var tableau = document.getElementById("tableau");
+                    var longueurTab = parseInt(document.getElementById("nbreLignes").innerHTML);
+                    if (longueurTab > 0) {
+                        for (var i = longueurTab; i > 0; i--) {
+                            monPanier.ajouterArticle(tableau.rows[i].cells[0].innerHTML, tableau.rows[i].cells[1].innerHTML, tableau.rows[i].cells[2].innerHTML);
+                            tableau.deleteRow(i);
+                        }
                     }
-                }
-                var longueur = monPanier.liste.length;
-                for (var i = 0; i < longueur; i++) {
-                    var ligne = monPanier.liste[i];
-                    // console.log(i);
-                    var ligneTableau = tableau.insertRow(-1);
-                    ligneTableau.setAttribute("id", i);
-                    var colonne1 = ligneTableau.insertCell(0);
-                    colonne1.innerHTML += ligne.getCode();
-                    var colonne2 = ligneTableau.insertCell(1);
-                    colonne2.innerHTML += ligne.qteArticle;
-                    var colonne3 = ligneTableau.insertCell(2);
-                    colonne3.innerHTML += ligne.prixArticle;
-                    var colonne4 = ligneTableau.insertCell(3);
-                    colonne4.innerHTML += ligne.getPrixLigne();
-                    var colonne5 = ligneTableau.insertCell(4);
-                    colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
-                    document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
-                    document.getElementById("nbreLignes").innerHTML = longueur;
+                    var longueur = monPanier.liste.length;
+                    for (var i = 0; i < longueur; i++) {
+                        var ligne = monPanier.liste[i];
+                        // console.log(i);
+                        var ligneTableau = tableau.insertRow(-1);
+                        ligneTableau.setAttribute("id", i);
+                        var colonne1 = ligneTableau.insertCell(0);
+                        colonne1.innerHTML += ligne.getCode();
+                        var colonne2 = ligneTableau.insertCell(1);
+                        colonne2.innerHTML += ligne.qteArticle;
+                        var colonne3 = ligneTableau.insertCell(2);
+                        colonne3.innerHTML += ligne.prixArticle;
+                        var colonne4 = ligneTableau.insertCell(3);
+                        colonne4.innerHTML += ligne.getPrixLigne();
+                        var colonne5 = ligneTableau.insertCell(4);
+                        colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
+                        document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
+                        document.getElementById("nbreLignes").innerHTML = longueur;
+
+                    }
 
                 }
-
-            }
-        });
+            });
+        }
     });
 
 }
@@ -190,11 +197,13 @@ function ajoutaliment() {
         $.ajax({
             type: "POST",
             dataType: "text",
-            data: {adresse : input},
+            data: {
+                adresse: input
+            },
             url: "index.php?Controller=Admin&action=getCommandeAliment",
             success: function (message) {
                 //alert(message);
-                 console.log(message);
+                console.log(message);
                 var messagedecode = jQuery.parseJSON(message);
                 console.log(messagedecode);
                 var fournisseur = messagedecode["fournisseur"];
@@ -231,15 +240,17 @@ function ajouterstock() {
         var ref = $(this).attr('data-ref');
         var qte = $(this).attr('data-qte');
         console.log(id, ref, qte);
-        var bouton=$(this);
+        var bouton = $(this);
         var tableau2 = document.getElementById("ajouttableau");
 
         $.ajax({
             type: "POST",
             dataType: "text",
-            data: {id:id,
-            ref:ref,
-            qte:qte},
+            data: {
+                id: id,
+                ref: ref,
+                qte: qte
+            },
             url: "index.php?Controller=Admin&action=validLigneAliment",
             success: function (message) {
                 console.log(message);
