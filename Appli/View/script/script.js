@@ -305,6 +305,9 @@ function premconnex() {
             missmail.style.color = "red";
             verification = false;
         }
+
+
+
         //    Vérification du nom
         if (nom.value == "") {
             nom.style.borderColor = "red";
