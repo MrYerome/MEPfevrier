@@ -272,14 +272,32 @@ function premconnex() {
         var form = $(this).closest("form");
         form = form[0].getElementsByTagName("input");
         console.log(form);
-        var mail = form[2];
-        var password = form[3];
-        var nom = form[4];
-        var prenom = form[5];
-        var adresse = form[6];
-        var codepostal = form[7];
-        var ville = form[8];
-        var tel = form[9];
+        var mail = form[0];
+        var password = form[1];
+        var nom = form[2];
+        var prenom = form[3];
+        var adresse = form[4];
+        var codepostal = form[5];
+        var ville = form[6];
+        var tel = form[7];
+
+        // Vérification du mail
+
+        if (mail.value !== "") {
+            var mailValue = mail.value;
+            var regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+            if (!regExp.test(mailValue)) {
+                mail.style.borderColor = "red";
+                mail.parentNode.className = "invalid";
+                alert('E-mail non valide');
+                verification = false;
+            } else {
+                mail.style.borderColor = "#ccc";
+                mail.parentNode.className = "";
+            }
+        }
+
+
 
         //    Vérification du nom
         if (nom.value == "") {
