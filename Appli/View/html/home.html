@@ -1,182 +1,175 @@
-<main>
-    <div id="panier">
-        <section class="row">
-            <div id="nospizzas" class="col-md-9">
-                <b>Nos pizzas</b>
 
-                <div class="col-lg-3" id="pizzas">
-                    <img src="View/img/Margarita.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Margarita</label> <input type="hidden" id="id"
-                                                                                               style="width:120px"
-                                                                                               class="input-sm form-control"
-                                                                                               value="pizza Margarita"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 10EUROS</label><br>
-                    <button id="margarita" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
+    <section class="row">
+        <div id="nospizzas" class="col-md-9">
+            <b>Nos pizzas</b>
 
-
-                <div class="col-lg-3" id="pizzas">
-                    <img src="View/img/4-fromages.jpg" width="115%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Quatres fromages</label> <input type="hidden"
-                                                                                                      id="id"
-                                                                                                      style="width:120px"
-                                                                                                      class="input-sm form-control"
-                                                                                                      value="pizza quatre fromages"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 12EUROS</label><br>
-                    <button id="quatrefromage" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
-
-
-                <div class="col-lg-3" id="pizzas">
-                    <img src="View/img/napolitaine.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Napolitaine</label> <input type="hidden" id="id"
-                                                                                                 style="width:120px"
-                                                                                                 class="input-sm form-control"
-                                                                                                 value="pizza Napolitaine"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 13EUROS</label><br>
-                    <button id="napolitaine" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
-
-            </div>
-            <article class="well form-inline pull-left col-md-3">
-                <legend>Contenu du panier</legend>
-                <table id="tableau" class="table">
-                    <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Qte</th>
-                        <th>Prix unitaire</th>
-                        <th>Prix de la ligne</th>
-                        <th>Supprimer</th>
-                    </tr>
-                    </thead>
-                </table>
-                <br><label>Prix du panier total</label> : <label id="prixTotal"></label>
-                <label id="nbreLignes" hidden>0</label>
-                <form id="verifOk" action="index.php?Controller=Home&action=validCommande" method="post"><input id="verifPanier" 
-                                                                                                   type="submit"
-                                                                                                   class="btn btn-primary"
-                                                                                                   value="Valider mon panier"><span id="panierVide"></span>
-                </form>
-
-            </article>
-        </section>
-        <section class="row">
-            <div class="col-md-12"></div>
-            <div id="nosboissons" class="col-md-9"><b>Nos boissons</b>
-
-                <div class="col-lg-3" id="boissons">
-                    <img src="View/img/cocacola.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Coca-Cola</label> <input type="hidden" id="id"
-                                                                                               style="width:120px"
-                                                                                               class="input-sm form-control"
-                                                                                               value="Cocacola"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 2EUROS</label><br>
-                    <button id="cocacola" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
-
-
-                <div class="col-lg-3" id="boissons">
-                    <img src="View/img/oasis.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Oasis</label> <input type="hidden" id="id"
+            <div class="col-lg-3" id="pizzas">
+                <img src="View/img/Margarita.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Margarita</label> <input type="hidden" id="id"
                                                                                            style="width:120px"
                                                                                            class="input-sm form-control"
-                                                                                           value="Oasis"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 3EUROS</label><br>
-                    <button id="oasis" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
+                                                                                           value="pizza Margarita"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 10EUROS</label><br>
+                <button id="margarita" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
 
 
-                <div class="col-lg-3" id="boissons">
-                    <img src="View/img/icetea.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Ice-tea</label> <input type="hidden" id="id"
+            <div class="col-lg-3" id="pizzas">
+                <img src="View/img/4-fromages.jpg" width="115%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Quatres fromages</label> <input type="hidden"
+                                                                                                  id="id"
+                                                                                                  style="width:120px"
+                                                                                                  class="input-sm form-control"
+                                                                                                  value="pizza quatre fromages"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 12EUROS</label><br>
+                <button id="quatrefromage" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+
+
+            <div class="col-lg-3" id="pizzas">
+                <img src="View/img/napolitaine.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Napolitaine</label> <input type="hidden" id="id"
                                                                                              style="width:120px"
                                                                                              class="input-sm form-control"
-                                                                                             value="Ice-tea"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 3.5EUROS</label><br>
-                    <button id="icetea" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
+                                                                                             value="pizza Napolitaine"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 13EUROS</label><br>
+                <button id="napolitaine" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
 
-            </div>
-        </section>
-        <section class="row">
-            <div id="nosdesserts" class="col-md-9"><b>Nos dessert</b>
-                <div class="col-lg-3" id="desserts">
-                    <img src="View/img/macrout.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Macrout</label> <input type="hidden" id="id"
-                                                                                             style="width:120px"
-                                                                                             class="input-sm form-control"
-                                                                                             value="Macrout"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 5EUROS</label><br>
-                    <button id="macrout" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
+        </div>
+        <article class="well form-inline pull-left col-md-3">
+            <legend>Contenu du panier</legend>
+            <table id="tableau" class="table">
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Qté</th>
+                    <th>Prix unitaire</th>
+                    <th>Prix de la ligne</th>
+                    <th>Supprimer</th>
+                </tr>
+                </thead>
+            </table>
+            <br><label>Prix du panier total</label> : <label id="prixTotal"></label>
+            <label id="nbreLignes" hidden>0</label>
+            <form id="verifOk" action="index.php?Controller=Home&action=validCommande" method="post"><input id="verifPanier" 
+                                                                                               type="submit"
+                                                                                               class="btn btn-primary"
+                                                                                               value="Valider mon panier"><span id="panierVide"></span>
+            </form>
 
-
-                <div class="col-lg-3" id="desserts">
-                    <img src="View/img/painchoco.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Pain au chocolat</label> <input type="hidden"
-                                                                                                      id="id"
-                                                                                                      style="width:120px"
-                                                                                                      class="input-sm form-control"
-                                                                                                      value="painchoco"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 2EUROS</label><br>
-                    <button id="painchoco" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
-
-
-                <div class="col-lg-3" id="desserts">
-                    <img src="View/img/glace.jpg" width="100%" alt=""><br>
-                    <label style="font-size: 20px; text-align: right">Haagen Daz</label> <input type="hidden" id="id"
-                                                                                                style="width:120px"
-                                                                                                class="input-sm form-control"
-                                                                                                value="glace"></input><br>
-                    <label>Quantité:</label><input type="number" style="width:60px"
-                                                   class="qte input-sm form-control"></input><br>
-                    <label>Prix : 4EUROS</label><br>
-                    <button id="glace" class="ajouter btn btn-primary" type="submit"><span
-                            class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
-                    </button>
-                    <br></div>
-            </div>
-
-
-    </div>
+        </article>
     </section>
+    <section class="row">
+        <div class="col-md-12"></div>
+        <div id="nosboissons" class="col-md-9"><b>Nos boissons</b>
+
+            <div class="col-lg-3" id="boissons">
+                <img src="View/img/cocacola.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Coca-Cola</label> <input type="hidden" id="id"
+                                                                                           style="width:120px"
+                                                                                           class="input-sm form-control"
+                                                                                           value="Cocacola"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 2EUROS</label><br>
+                <button id="cocacola" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
 
 
-</main>
+            <div class="col-lg-3" id="boissons">
+                <img src="View/img/oasis.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Oasis</label> <input type="hidden" id="id"
+                                                                                       style="width:120px"
+                                                                                       class="input-sm form-control"
+                                                                                       value="Oasis"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 3EUROS</label><br>
+                <button id="oasis" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+
+
+            <div class="col-lg-3" id="boissons">
+                <img src="View/img/icetea.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Ice-tea</label> <input type="hidden" id="id"
+                                                                                         style="width:120px"
+                                                                                         class="input-sm form-control"
+                                                                                         value="Ice-tea"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 3.5EUROS</label><br>
+                <button id="icetea" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+
+        </div>
+    </section>
+    <section class="row">
+        <div id="nosdesserts" class="col-md-9"><b>Nos desserts</b>
+            <div class="col-lg-3" id="desserts">
+                <img src="View/img/macrout.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Macrout</label> <input type="hidden" id="id"
+                                                                                         style="width:120px"
+                                                                                         class="input-sm form-control"
+                                                                                         value="Macrout"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 5EUROS</label><br>
+                <button id="macrout" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+
+
+            <div class="col-lg-3" id="desserts">
+                <img src="View/img/painchoco.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Pain au chocolat</label> <input type="hidden"
+                                                                                                  id="id"
+                                                                                                  style="width:120px"
+                                                                                                  class="input-sm form-control"
+                                                                                                  value="painchoco"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 2EUROS</label><br>
+                <button id="painchoco" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+
+
+            <div class="col-lg-3" id="desserts">
+                <img src="View/img/glace.jpg" width="100%" alt=""><br>
+                <label style="font-size: 20px; text-align: right">Haagen Daz</label> <input type="hidden" id="id"
+                                                                                            style="width:120px"
+                                                                                            class="input-sm form-control"
+                                                                                            value="glace"><br>
+                <label>Quantité:</label><input type="number" style="width:60px"
+                                               class="qte input-sm form-control"><br>
+                <label>Prix : 4EUROS</label><br>
+                <button id="glace" class="ajouter btn btn-primary" type="submit"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier
+                </button>
+                <br></div>
+        </div>
+    </section>
 
 
 
