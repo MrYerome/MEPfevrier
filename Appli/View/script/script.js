@@ -16,6 +16,7 @@ function validation() {
 
 function ajouter() {
     $(".ajouter").click(function () {
+        panierVide.textContent = "";
         var id = $(this).attr('id');
         var qte = $(this).siblings(".qte").val();
 
@@ -66,9 +67,8 @@ function ajouter() {
                         colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
                         document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
                         document.getElementById("nbreLignes").innerHTML = longueur;
-
                     }
-
+                    
                 }
             });
         }
@@ -364,6 +364,21 @@ function premconnex() {
     });
 }
 
+function verifierPanier() {
+    $("#verifPanier").click(function (e) {
+        e.preventDefault();
+        var nbLigne = document.getElementById("nbreLignes").textContent;
+        //console.log(nbLigne);        
+        if (nbLigne == 0) {
+            panierVide.textContent = " Votre panier est vide!";
+            panierVide.style.color = "red";
+        } else {
+            document.getElementById("verifOk").submit();
+        }
+        
+    });
+}
+
 
 $(document).ready(function () {
     ajouter();
@@ -371,6 +386,7 @@ $(document).ready(function () {
     ajoutaliment();
     ajouterstock();
     premconnex();
+    verifierPanier();
     // $('#myTable').DataTable();
 
 });

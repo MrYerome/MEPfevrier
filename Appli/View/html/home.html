@@ -65,9 +65,10 @@
                 </table>
                 <br><label>Prix du panier total</label> : <label id="prixTotal"></label>
                 <label id="nbreLignes" hidden>0</label>
-                <form action="index.php?Controller=Home&action=validCommande" method="post"><input type="submit"
+                <form id="verifOk" action="index.php?Controller=Home&action=validCommande" method="post"><input id="verifPanier" 
+                                                                                                   type="submit"
                                                                                                    class="btn btn-primary"
-                                                                                                   value="Valider mon panier">
+                                                                                                   value="Valider mon panier"><span id="panierVide"></span>
                 </form>
 
             </article>

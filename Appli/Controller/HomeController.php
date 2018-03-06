@@ -55,7 +55,9 @@ class HomeController
 
     public function HomeAction()
     {
+        session_destroy();
         $this->view->DisplayHome();
+        
     }
 
     public function identificationAction()
