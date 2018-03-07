@@ -231,23 +231,27 @@ class AdminModel
 //        var_dump($parsed_json);
         $fournisseur = $parsed_json->fournisseur;
         $numerocommande = $parsed_json->id_commande;
-        $listeAliment = array("fournisseur"=>$fournisseur,"Commande"=>$numerocommande);
+        $liste=array();
 
 
 // array_push($listeAliment,$fournisseur,$numerocommande);
 
         $contenu=$parsed_json->contenu_commande;
+        $listeAliment = array();
 
         foreach($contenu as $item){
-            $liste=array();
-            array_push($liste,$item->ref,$item->qte);
+
+$ref=array("ref"=>$item->ref, "qte"=>$item->qte,);
+
+            array_push($liste,$ref);
 
 
             array_push($listeAliment,$liste);
         }
+        $listeAliment = array("fournisseur"=>$fournisseur,"Commande"=>$numerocommande,"Contenu"=>$liste);
 
         //var_dump($listeAliment);
-
+//$listeAliment="";
         return $listeAliment;
     }
 

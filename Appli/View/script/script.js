@@ -206,26 +206,28 @@ function ajoutaliment() {
                 console.log(message);
                 var messagedecode = jQuery.parseJSON(message);
                 console.log(messagedecode);
+                console.log(message.contenu);
                 var fournisseur = messagedecode["fournisseur"];
-                var longueurjson = messagedecode.keys().length;
-                console.log(longueurjson);
+                // var longueurjson = messagedecode.keys().length;
+                //console.log(longueurjson);
                 var commande = messagedecode["Commande"];
+                var longueurTab = messagedecode.Contenu.length;
                 var tableau2 = document.getElementById("ajouttableau");
+
                 tableau2.innerHTML += "Nom du fournisseur : " + fournisseur + "<br>";
                 tableau2.innerHTML += "Numéro de la commande : " + commande + "<br>";
-                // tableau2.innerHTML+= "<table>";
-                tableau2.innerHTML += "<th><td>Référence</td><td>Quantité</td></th><br>";
-                for (var i = 0; i < 4; i++) {
-                    var ref = messagedecode[i][0];
-                    var qte = messagedecode[i][1];
 
-                    tableau2.innerHTML += "<tr>";
+                console.log(messagedecode.Contenu[0]);
+                for (var i = 0; i < longueurTab; i++) {
+                    var ref = messagedecode.Contenu[i]["ref"];
+                    var qte = messagedecode.Contenu[i]["qte"];
+
+
                     tableau2.innerHTML += "<td>Reférence de la commande : " + ref + "  -  </td>";
                     tableau2.innerHTML += "<td>Quantité de la commande : " + qte + "</td>";
                     tableau2.innerHTML += "<span> . . . . .</span><td><button data-qte='" + qte + "' data-ref='" + ref + "' id='" + i + "' class=\"enregistrement btn btn-primary\" type=\"submit\"><span class=\"glyphicon glyphicon-add\"></span> Ajouter</button></td>";
-                    tableau2.innerHTML += "</tr><br>"
+                    tableau2.innerHTML += "<br>"
                 }
-                tableau2.innerHTML += "</table>";
                 ajouterstock();
             }
 
