@@ -208,7 +208,7 @@ class AdminView
         //var_dump($list);
         foreach ($listeStockAliment as $element) {
             $this->page .= "<tr id='" . $element['id_aliment'] . "'>";
-            $this->page .= "<td>" . $element['id_aliment'] . "</td>";
+            $this->page .= "<td>" . $element['ref'] . "</td>";
             $this->page .= "<td>" . $element['nom_aliment'] . "</td>";
             $this->page .= "<td>" . $element['stock_aliment'] . "</td>";
             $this->page .= "<td class='text-center'><a class='glyphicon glyphicon-eye-open' href='index.php?Controller=Admin&action=detailAliment&id=" . $element["id_aliment"] . "'></a></td>";

@@ -68,7 +68,7 @@ function ajouter() {
                         document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
                         document.getElementById("nbreLignes").innerHTML = longueur;
                     }
-                    
+
                 }
             });
         }
@@ -193,7 +193,7 @@ function Commande() {
 function ajoutaliment() {
     $("#ajoutaliment").click(function () {
         var input = $("#inputajout").val();
-        console.log(input);
+        // console.log(input);
         $.ajax({
             type: "POST",
             dataType: "text",
@@ -208,27 +208,31 @@ function ajoutaliment() {
                 console.log(messagedecode);
                 console.log(message.contenu);
                 var fournisseur = messagedecode["fournisseur"];
-                // var longueurjson = messagedecode.keys().length;
-                //console.log(longueurjson);
                 var commande = messagedecode["Commande"];
                 var longueurTab = messagedecode.Contenu.length;
-                var tableau2 = document.getElementById("ajouttableau");
+                var modalheader = document.getElementById("modalheader");
+                var modalbody = document.getElementById("modalbody");
+                var modalfooter = document.getElementById("modalfooter");
 
-                tableau2.innerHTML += "Nom du fournisseur : " + fournisseur + "<br>";
-                tableau2.innerHTML += "Numéro de la commande : " + commande + "<br>";
+                modalheader.innerHTML += "<h3>Nom du fournisseur : " + fournisseur + "</h3><br>";
+                modalheader.innerHTML += "<h4>Numéro de la commande : " + commande + "</h4><br>";
 
-                console.log(messagedecode.Contenu[0]);
                 for (var i = 0; i < longueurTab; i++) {
                     var ref = messagedecode.Contenu[i]["ref"];
                     var qte = messagedecode.Contenu[i]["qte"];
 
 
-                    tableau2.innerHTML += "<td>Reférence de la commande : " + ref + "  -  </td>";
-                    tableau2.innerHTML += "<td>Quantité de la commande : " + qte + "</td>";
-                    tableau2.innerHTML += "<span> . . . . .</span><td><button data-qte='" + qte + "' data-ref='" + ref + "' id='" + i + "' class=\"enregistrement btn btn-primary\" type=\"submit\"><span class=\"glyphicon glyphicon-add\"></span> Ajouter</button></td>";
-                    tableau2.innerHTML += "<br>"
+                    modalbody.innerHTML += "<div id='refproduit'>Reférence du produit : " + ref + "  - Quantité  : " + qte + "</div>";
+                    modalbody.innerHTML += "<div id='ajoutcheckbox' >     <input type='checkbox' id='" + i + " 'data-ref='" + ref + "' data-qte='" + qte + "'></div>";
+                    modalbody.innerHTML += "<br/>";
+
+
                 }
-                ajouterstock();
+                modalfooter.innerHTML += "<button id='cochertous' class=\"btn btn-default\" type=\"submit\">Cocher tous</button>";
+                modalfooter.innerHTML += "<button id='enregistrercommande' class=\"btn btn-primary\" type=\"submit\">Valider les produits sélectionnés</button>";
+
+                cochertous();
+                enregistrercommande();
             }
 
         });
@@ -238,37 +242,7 @@ function ajoutaliment() {
 
 }
 
-function ajouterstock() {
-    $(".enregistrement").click(function () {
-        var id = $(this).attr('id');
-        var ref = $(this).attr('data-ref');
-        var qte = $(this).attr('data-qte');
-        console.log(id, ref, qte);
-        var bouton = $(this);
-        var tableau2 = document.getElementById("ajouttableau");
 
-        $.ajax({
-            type: "POST",
-            dataType: "text",
-            data: {
-                id: id,
-                ref: ref,
-                qte: qte
-            },
-            url: "index.php?Controller=Admin&action=validLigneAliment",
-            success: function (message) {
-                console.log(message);
-                bouton.hide();
-                tableau2.innerHTML += "<p color='red'>Commande ajoutée au stock !<p><br>";
-                console.log($(this));
-                ajouterstock();
-
-            }
-
-        });
-
-    });
-}
 
 function premconnex() {
     $("#premconnex").click(function (e) {
@@ -309,7 +283,6 @@ function premconnex() {
             missmail.style.color = "red";
             verification = false;
         }
-
 
 
         //    Vérification du nom
@@ -379,13 +352,13 @@ function verifierPanier() {
         } else {
             document.getElementById("verifOk").submit();
         }
-        
+
     });
 }
 
 
 function retourHaut() {
-  var duration = 500;
+    var duration = 500;
 //  window.scroll(function() {
 //    if ($(this).scrollTop() > 100) {
 //      // Si un défillement de 100 pixels ou plus.
@@ -396,25 +369,82 @@ function retourHaut() {
 //      $('.cRetour').fadeOut(duration);
 //    }
 //  });
-				
-  $('.cRetour').click(function(event) {
-    // Un clic provoque le retour en haut animé.
-    event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, duration);
-    return false;
-  })   
+
+    $('.cRetour').click(function (event) {
+        // Un clic provoque le retour en haut animé.
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
 }
 
+function cochertous() {
+    $("#cochertous").click(function () {
+        var checkbox = document.getElementById("modalbody").getElementsByTagName("input");
+        console.log(checkbox);
+        var longueurcheckbox = checkbox.length;
+        for (var i = 0; i < longueurcheckbox; i++) {
+            checkbox[i].setAttribute("checked", "checked");
+        }
 
+    });
+}
+
+function enregistrercommande() {
+    $("#enregistrercommande").click(function () {
+        var produitscoches = $("#modalbody input");
+        //console.log(produitscoches);
+        produitscoches.each(function () {
+            var checked = $(this).prop("checked");
+            console.log($(this));
+
+            var ref = $(this).attr('data-ref');
+            var qte = $(this).attr('data-qte');
+            if (checked == true) {
+
+                $.ajax({
+                    type: "POST",
+                    dataType: "text",
+                    data: {
+                        ref: ref,
+                        qte: qte
+                    },
+                    url: "index.php?Controller=Admin&action=validLigneAliment",
+                    success: function (message) {
+                        console.log(message);},
+                    error: function (message) {
+                        console.log(message);
+                    }
+
+                });
+            }
+        });
+
+        modalfooter.innerHTML += "<p color='red'>Commande ajoutée au stock !<p><br>";
+        sleep(1000);
+        $("#myModal").hide();
+        sleep(3000);
+        window.location = "index.php?Controller=Admin&action=listeStockAliment";
+
+    })
+
+
+}
+
+function sleep(milliSeconds){
+    var startTime = new Date().getTime();
+    while (new Date().getTime() < startTime + milliSeconds);
+}
 
 $(document).ready(function () {
     ajouter();
     validation();
     ajoutaliment();
-    ajouterstock();
     premconnex();
     verifierPanier();
     retourHaut();
+    sleep();
+
     // $('#myTable').DataTable();
 
 });
