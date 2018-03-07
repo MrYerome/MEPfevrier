@@ -207,13 +207,15 @@ function ajoutaliment() {
                 var messagedecode = jQuery.parseJSON(message);
                 console.log(messagedecode);
                 var fournisseur = messagedecode["fournisseur"];
+                var longueurjson = messagedecode.keys().length;
+                console.log(longueurjson);
                 var commande = messagedecode["Commande"];
                 var tableau2 = document.getElementById("ajouttableau");
                 tableau2.innerHTML += "Nom du fournisseur : " + fournisseur + "<br>";
                 tableau2.innerHTML += "Numéro de la commande : " + commande + "<br>";
                 // tableau2.innerHTML+= "<table>";
                 tableau2.innerHTML += "<th><td>Référence</td><td>Quantité</td></th><br>";
-                for (var i = 0; i < 3; i++) {
+                for (var i = 0; i < 4; i++) {
                     var ref = messagedecode[i][0];
                     var qte = messagedecode[i][1];
 
