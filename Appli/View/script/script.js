@@ -380,6 +380,29 @@ function verifierPanier() {
 }
 
 
+function retourHaut() {
+  var duration = 500;
+//  window.scroll(function() {
+//    if ($(this).scrollTop() > 100) {
+//      // Si un défillement de 100 pixels ou plus.
+//      // Ajoute le bouton
+//      $('.cRetour').fadeIn(duration);
+//    } else {
+//      // Sinon enlève le bouton
+//      $('.cRetour').fadeOut(duration);
+//    }
+//  });
+				
+  $('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })   
+}
+
+
+
 $(document).ready(function () {
     ajouter();
     validation();
@@ -387,6 +410,7 @@ $(document).ready(function () {
     ajouterstock();
     premconnex();
     verifierPanier();
+    retourHaut();
     // $('#myTable').DataTable();
 
 });
