@@ -24,3 +24,7 @@
     float :right;
     margin-left:20px;
 }
+#messagevalidstock{
+    color:red;
+    font-weight: bolder;
+}

@@ -432,7 +432,7 @@ function enregistrercommande() {
         modalfooter.innerHTML += "<p color='red'>Commande ajoutée au stock !<p><br>";
         // sleep(3000);
         // window.location = "index.php?Controller=Admin&action=listeStockAliment";
-
+        $(".form-inline").append("<div id='messagevalidstock'>Cliquez sur rafraichir pour mettre à jour votre stock</div>");
 
     })
 

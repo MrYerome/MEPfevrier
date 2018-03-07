@@ -217,8 +217,8 @@ class AdminView
         $this->page .= "</tbody></table>";
         $this->page .= "</div>";
         $this->page .= "</div>";
+        $this->page .= " <a href='index.php?Controller=Admin&action=listeStockAliment'><button type='button' class='btn btn-light'>Rafraichir</button></a>";
         $this->page .= " <a href='index.php?Controller=admin&action=accueil'><button type='button' class='btn btn-light'>Retour à l'accueil</button></a>";
-        $this->page .= " <a href='index.php?Controller=Admin&action=listeStockAliment'><button type='button' class='btn btn-light'>Mettre à jour les stocks</button></a>";
 
         $this->Display();
     }
@@ -268,8 +268,8 @@ class AdminView
         $this->page .= "</tbody></table>";
         $this->page .= "</div>";
         $this->page .= "</div>";
+        $this->page .= " <a href='index.php?Controller=Admin&action=listeStockConsommable'><button type='button' class='btn btn-light'>Mettre à jour les stocks</button></a><br>";
         $this->page .= " <a href='index.php?Controller=admin&action=accueil'><button type='button' class='btn btn-light'>Retour à l'accueil</button></a><br>";
-        $this->page .= " <a href='index.php?Controller=Admin&action=listeStockConsommable'><button type='button' class='btn btn-light'>Mettre à jour les stocks</button></a>";
 
         $this->Display();
     }
