@@ -13,8 +13,12 @@
     display:block;
     float :right;
 }
-#modalbody {
-    line-height: 50px;
+/*#contenumodalbody {*/
+    /*line-height: 10em;*/
+/*}*/
+.soulignement {
+    line-height: 2em;
+    border-bottom: outset 1px rgba(125,112,89, 0.4);
 }
 #ajoutcheckbox{
     float :right;

@@ -194,6 +194,9 @@ function ajoutaliment() {
     $("#ajoutaliment").click(function () {
         var input = $("#inputajout").val();
         // console.log(input);
+        $("#modalheader").html("");
+        $("#modalbody").html("");
+        $("#modalfooter").html("");
         $.ajax({
             type: "POST",
             dataType: "text",
@@ -206,30 +209,31 @@ function ajoutaliment() {
                 console.log(message);
                 var messagedecode = jQuery.parseJSON(message);
                 console.log(messagedecode);
-                console.log(message.contenu);
                 var fournisseur = messagedecode["fournisseur"];
                 var commande = messagedecode["Commande"];
                 var longueurTab = messagedecode.Contenu.length;
-                var modalheader = document.getElementById("modalheader");
-                var modalbody = document.getElementById("modalbody");
-                var modalfooter = document.getElementById("modalfooter");
 
-                modalheader.innerHTML += "<h3>Nom du fournisseur : " + fournisseur + "</h3><br>";
-                modalheader.innerHTML += "<h4>Numéro de la commande : " + commande + "</h4><br>";
+
+
+
+                $("#modalheader").append("<div id='contenumodalheader'><h3>Nom du fournisseur :" + fournisseur +"</h3><br><h4>Numéro de la commande :" + commande +"</h4></div><div class='clearfloat'") ;
+                $("#modalbody").append("<div id='contenumodalbody'>") ;
 
                 for (var i = 0; i < longueurTab; i++) {
                     var ref = messagedecode.Contenu[i]["ref"];
                     var qte = messagedecode.Contenu[i]["qte"];
 
 
-                    modalbody.innerHTML += "<div id='refproduit'>Reférence du produit : " + ref + "  - Quantité  : " + qte + "</div>";
-                    modalbody.innerHTML += "<div id='ajoutcheckbox' >     <input type='checkbox' id='" + i + " 'data-ref='" + ref + "' data-qte='" + qte + "'></div>";
-                    modalbody.innerHTML += "<br/>";
+                    $("#modalbody").append("<div class='soulignement' id='contenumodalbody"+i+"'><div id='refproduit'>Reférence du produit :" + ref +"  - Quantité  :" + qte +"</div><div id='ajoutcheckbox' >     <input type='checkbox' id='" + i +" 'data-ref='" + ref + "' data-qte='" + qte + "'></div><br>") ;
+                    $("#modalbody").append("");
+                    $("#modalbody").append("<br/>");
+
 
 
                 }
-                modalfooter.innerHTML += "<button id='cochertous' class=\"btn btn-default\" type=\"submit\">Cocher tous</button>";
-                modalfooter.innerHTML += "<button id='enregistrercommande' class=\"btn btn-primary\" type=\"submit\">Valider les produits sélectionnés</button>";
+                $("#modalbody").append("</div>");
+                $("#modalfooter").append("<div id='contenumodalfooter'><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button><button id='cochertous' class=\"btn btn-danger\" type=\"submit\">Cocher tous</button><button id='enregistrercommande' class=\"btn btn-primary\" type=\"submit\">Valider les produits sélectionnés</button></div>");
+
 
                 cochertous();
                 enregistrercommande();
@@ -419,12 +423,16 @@ function enregistrercommande() {
                 });
             }
         });
+        // confirm("refresh ?");
 
-        modalfooter.innerHTML += "<p color='red'>Commande ajoutée au stock !<p><br>";
         sleep(1000);
-        $("#myModal").hide();
-        sleep(3000);
-        window.location = "index.php?Controller=Admin&action=listeStockAliment";
+        $(".modal").fadeOut(2000);
+        $(".modal-backdrop").fadeOut(2000);
+        $("body").removeClass();
+        modalfooter.innerHTML += "<p color='red'>Commande ajoutée au stock !<p><br>";
+        // sleep(3000);
+        // window.location = "index.php?Controller=Admin&action=listeStockAliment";
+
 
     })
 
