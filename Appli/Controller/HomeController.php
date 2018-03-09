@@ -55,7 +55,8 @@ class HomeController
 
     public function HomeAction()
     {
-        session_destroy();
+        //session_destroy();
+        unset($_SESSION["panier"]);
         $this->view->DisplayHome();
         
     }

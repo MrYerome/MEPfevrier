@@ -31,13 +31,13 @@ function ajouter() {
                 dataType: "text",
                 url: "index.php?Controller=Home&action=ajoutLigneCommande",
                 success: function (message) {
-                    console.log(message);
+                    //console.log(message);
                     var messagedecode = jQuery.parseJSON(message);
                     var id_produit = messagedecode['id_produit'];
                     var type_produit = messagedecode['typeproduit'];
                     var code = messagedecode['nom'];
                     var prix = messagedecode['prix'];
-                    console.log(id_produit, type_produit, code, prix, qte);
+                    //console.log(id_produit, type_produit, code, prix, qte);
 
                     var monPanier = new Panier();
                     monPanier.ajouterArticle(code, qte, prix);
@@ -57,7 +57,9 @@ function ajouter() {
                         ligneTableau.setAttribute("id", i);
                         var colonne1 = ligneTableau.insertCell(0);
                         colonne1.innerHTML += ligne.getCode();
-                        var colonne2 = ligneTableau.insertCell(1);
+                        var colonne2 = ligneTableau.insertCell(1);                        
+//                        console.log(qte);
+//                        console.log(ligne.qteArticle);                        
                         colonne2.innerHTML += ligne.qteArticle;
                         var colonne3 = ligneTableau.insertCell(2);
                         colonne3.innerHTML += ligne.prixArticle;
@@ -126,10 +128,12 @@ function supprimer(message) {
 
 function LignePanier(code, qte, prix) {
     this.codeArticle = code;
-    this.qteArticle = qte;
+    this.qteArticle = parseInt(qte);
+//    this.qteArticle = qte;
     this.prixArticle = prix;
     this.ajouterQte = function (qte) {
-        this.qteArticle += qte;
+        this.qteArticle = this.qteArticle + parseInt(qte);
+//        this.qteArticle += qte;
     }
     this.getPrixLigne = function () {
         var resultat = this.prixArticle * this.qteArticle;
